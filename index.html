@@ -8,14 +8,19 @@
     <link rel="icon" href="./icons8-calendar-50.png">
 </head>
 <body>
-    <div class="container">
+    
         <div class="box">
-            <input type="text" id="inputText">
+            <input type="text" id="inputText" placeholder="mm-dd-yr">
             <button onclick="addingAgeCalculater()">Calculate</button>
             
         </div>
-        <ul id="inputValue"></ul>
-    </div>
+        <ul id="inputValue">
+           <div> <li id="month">...<br></li><p>Months</p></div>
+           <div><li id="day">...<br></li><p>Days</p></div>
+           <div> <li id="year">...<br></li><p>Years</p></div>
+        </ul>
+   
     <script src="./script.js"></script>
 </body>
 </html>
+<!-- Css -->

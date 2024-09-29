@@ -6,39 +6,35 @@
 }
 
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: #fff;
-}
-.container{
-    width: 60%;
-    height:70% ;
+    width: 100%;
+    height:100% ;
     background-color: rgb(62, 62, 215);
-    box-shadow: 0px 0px 10px rgb(94, 87, 87);
+    /* box-shadow: 0px 0px 10px rgb(94, 87, 87); */
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #fff;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
+
 .box{
+    margin-top: 90px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: #222;
-    height: 30%;
-    width: 60%;
+    height: 120px;
+    width: 40%;
     border-radius: 10px;
-    margin-top: 50px;
     box-shadow: 0px 0px 5px rgb(67, 64, 64);
     flex-wrap: wrap;
 }
 
 .box button{
-    width: 25%;
+    width: 150px;
     height: 40%;
     border-radius: 7px;
     font-family: Arial, Helvetica, sans-serif;
@@ -47,6 +43,7 @@ body{
     cursor: pointer;
 }
 .box input{
+    padding-left: 15px;
     width: 57%;
     height: 40%;
     border-radius: 7px;
@@ -55,10 +52,37 @@ body{
     background-color: white;
     background-image: url('./icons8-calendar-24.png');
     box-sizing: border-box;
-    background-position: 215px 12px; 
+    background-position: 95% 12px; 
     background-repeat: no-repeat;
     cursor: pointer;
 }
-.listItem{
+ul div{
+    list-style: none;
+    background-color: #222;
+    box-shadow:;
+    margin-top: 10px;
+    width: 125px;
+    text-align: center;
+    height: 115px;
     
+    font-family: Arial, Helvetica, sans-serif;
 }
+ul li{
+    padding: 20px 10px 10px 10px;
+    border-radius: 5px;
+    font-size: 3rem;
+}
+ul div p{
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: #6f6a6a;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+    width: 40%;
+}
+
+/* javascript */
