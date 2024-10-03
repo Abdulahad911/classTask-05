@@ -8,8 +8,8 @@
 body{
     width: 100%;
     height:100% ;
-    background-color: rgb(62, 62, 215);
-    /* box-shadow: 0px 0px 10px rgb(94, 87, 87); */
+    background: linear-gradient(90deg, rgb(73, 73, 214), rgb(62, 62, 215), rgb(104, 104, 228) );
+         
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@ body{
     justify-content: space-around;
     background-color: #222;
     height: 120px;
-    width: 40%;
+    width: 480px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgb(67, 64, 64);
     flex-wrap: wrap;
@@ -44,7 +44,7 @@ body{
 }
 .box input{
     padding-left: 15px;
-    width: 57%;
+    width: 270px;
     height: 40%;
     border-radius: 7px;
     font-family: Arial, Helvetica, sans-serif;
@@ -59,12 +59,12 @@ body{
 ul div{
     list-style: none;
     background-color: #222;
-    box-shadow:;
-    margin-top: 10px;
+    box-shadow:0px 0px 5px rgb(67, 64, 64);
+    margin: 50px 10px;
     width: 125px;
     text-align: center;
     height: 115px;
-    
+    border-radius: 7px;
     font-family: Arial, Helvetica, sans-serif;
 }
 ul li{
@@ -81,8 +81,7 @@ ul div p{
 ul{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     height: 120px;
     width: 40%;
 }
-
-/* javascript */
