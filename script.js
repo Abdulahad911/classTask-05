@@ -23,7 +23,16 @@ function addingAgeCalculater() {
     var currentYear = today.getFullYear();
     var currentMonth = today.getMonth() + 1;
     var currentDay = today.getDate();
-    ''
+    
+if (month < 1 || month > 12) {
+    return alert('Invalid month. Enter a value between 1 and 12.');
+}
+if (day < 1 || day > 31) {
+    return alert('Invalid day. Enter a value between 1 and 31.');
+}
+if (year > currentYear) {
+    return alert('Year cannot be in the future.');
+}
    
     document.getElementById('inputText').value = '';
 }
