@@ -19,5 +19,11 @@ function addingAgeCalculater() {
         return alert('Invalid date. Please enter numbers in the format mm-dd-yr.');
     }
 
+    var today = new Date();
+    var currentYear = today.getFullYear();
+    var currentMonth = today.getMonth() + 1;
+    var currentDay = today.getDate();
+    ''
+   
     document.getElementById('inputText').value = '';
 }
