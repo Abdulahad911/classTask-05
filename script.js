@@ -33,6 +33,9 @@ if (day < 1 || day > 31) {
 if (year > currentYear) {
     return alert('Year cannot be in the future.');
 }
-   
+   yearEl.textContent = currentYear - year;
+   monthEl.textContent = currentMonth - month;
+   dayEl.textContent = currentDay - day;
+
     document.getElementById('inputText').value = '';
 }
