@@ -25,6 +25,7 @@ function addingAgeCalculater() {
     var currentDay = today.getDate();
     var ageDay =  currentDay - day;
     var ageMonth = currentMonth - month;
+    var ageYear = currentYear - year;
 if (month < 1 || month > 12) {
     return alert('Invalid month. Enter a value between 1 and 12.');
 }
@@ -43,7 +44,7 @@ if (ageMonth < 0) {
     ageYear--;
     ageMonth += 12;
 }
-   yearEl.textContent = currentYear - year;
+   yearEl.textContent = ageYear;
    monthEl.textContent = ageMonth;
    dayEl.textContent = ageDay ;
 
