@@ -39,6 +39,10 @@ if (ageDay < 0) {
     var daysInPreviousMonth = new Date(currentYear, currentMonth - 1, 0).getDate();
     ageDay += daysInPreviousMonth; 
 }
+if (ageMonth < 0) {
+    ageYear--;
+    ageMonth += 12;
+}
    yearEl.textContent = currentYear - year;
    monthEl.textContent = ageMonth;
    dayEl.textContent = ageDay ;
