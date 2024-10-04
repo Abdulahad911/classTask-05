@@ -23,7 +23,8 @@ function addingAgeCalculater() {
     var currentYear = today.getFullYear();
     var currentMonth = today.getMonth() + 1;
     var currentDay = today.getDate();
-    
+    var ageDay =  currentDay - day;
+    var ageMonth = currentMonth - month;
 if (month < 1 || month > 12) {
     return alert('Invalid month. Enter a value between 1 and 12.');
 }
@@ -33,9 +34,14 @@ if (day < 1 || day > 31) {
 if (year > currentYear) {
     return alert('Year cannot be in the future.');
 }
+if (ageDay < 0) {
+    ageMonth--;
+    var daysInPreviousMonth = new Date(currentYear, currentMonth - 1, 0).getDate();
+    ageDay += daysInPreviousMonth; 
+}
    yearEl.textContent = currentYear - year;
-   monthEl.textContent = currentMonth - month;
-   dayEl.textContent = currentDay - day;
+   monthEl.textContent = ageMonth;
+   dayEl.textContent = ageDay ;
 
     document.getElementById('inputText').value = '';
 }
